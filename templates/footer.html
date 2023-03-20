@@ -42,7 +42,7 @@
                         <i class="fa fa-envelope-open"></i>
                         <div class="cta-text">
                             <h4>Mail us</h4>
-                            <span>adexjamez@gmail.com</span>
+                            <span>alex@gemspeaksmedia.com</span>
                         </div>
                     </div>
                 </div>
@@ -94,8 +94,9 @@
                             <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
                         </div>
                         <div class="subscribe-form">
-                            <form action="#">
-                                <input type="text" placeholder="Email Address">
+                            <form action="." method="POST">
+                                {% csrf_token %}
+                                <input type="email" name="email" id="email" placeholder="Type your email address">
                                 <button><i class="fa fa-paper-plane"></i></button>
                             </form>
                         </div>
