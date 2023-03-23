@@ -40,7 +40,7 @@
                                     {% for cat in post.categories.all %}
                                     <a href="#">{{cat.title}}</a> {% endfor %}
                                 </div>
-                                <a href="post.html">
+                                <a href="{{latest.get_absolute_url}}">
                                     <h2 class="h4">{{post.title}}</h2>
                                 </a>
                             </header>
@@ -95,7 +95,7 @@
                                 <a href="#">{{cat}}</a> {% endfor %}
                             </div>
                         </div>
-                        <a href="post.html">
+                        <a href="{{latest.get_absolute_url}}">
                             <h3 class="h4">{{latest.title}}</h3>
                         </a>
                         <p class="text-muted">{{latest.overview}}</p>
