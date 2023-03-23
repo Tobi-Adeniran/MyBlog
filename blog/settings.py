@@ -14,7 +14,7 @@ SECRET_KEY = str(os.getenv('SECRET_KEY'))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['fast-cove-13198.herokuapp.com', 'localhost', '127.0.0.1', '127.0.0.1:8000', 'tobisblogg.online']
+ALLOWED_HOSTS = ['fast-cove-13198.herokuapp.com', 'localhost', '127.0.0.1', '127.0.0.1:8000', 'gemspeaksmedia.com']
 
 
 # Application definition
