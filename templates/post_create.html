@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% load crispy_forms_tags %} {% block content %}
 <div class="col-12 col-md-8 col-lg-4" style="margin: auto;">
-    <h3>{{title}} an Article</h3>
+    <h3 style="text-align: center; margin-top: 20px;">{{title}} an Article</h3>
     {{form.media}}
     <form action="." method="POST" enctype="multipart/form-data">
         {% csrf_token %} {{form|crispy}}
